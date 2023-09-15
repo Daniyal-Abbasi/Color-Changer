@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+       *{
+        margin: 0%;
+        padding: 0% ;
+        box-sizing:border-box ;
+
+       }
+        .container{
+              width: 100%;
+              height: 100vh;
+              padding: 30px;
+             
+
+        }
+        img{
+            width: 100%;
+            align-items: center;
+            height: 100%;
+        }
+        p{
+            font-size: 40px;
+        }
+        h2{
+            /* text-align: center; */
+            font-weight: bolder;
+            font-size: 50px;
+            margin-left: 150px;
+        }
+         .btn{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: solid gray;
+            border-radius: 50px;
+            /* justify-content: center; */
+            align-items: center;
+
+         }
+
+         .color{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+
+         #white{
+             background-color: rgb(238, 239, 240);
+
+         }
+         #brown{
+             background-color: rgb(146, 44, 44);
+
+         }  
+         #blue{
+            background-color: blue;
+         }
+         #black{
+            background-color: black;
+         }
+      </style>
+</head>
+ 
+
+ 
+ 
+<body>
+    <div class="container">
+        <div class="color" >
+            <span class="btn" id="white" onclick="change('#eeeee4')"></span>
+            <span class="btn" id="brown"onclick="change('#873e23')"></span>
+            <span class="btn" id="blue"onclick="change('blue')"></span>
+            <span class="btn" id="black"onclick="change('black')"></span>
+            <h2 class="text">About</h2>
+        </div>
+    <div class="para">
+            <img src="art-1478831_1920.jpg" alt="" >
+            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea porro mollitia nobis numquam, possimus cupiditate enim! Ipsum quisquam natus dolorem nesciunt maiores repellat sit doloremque deleniti reprehenderit earum commodi minus a voluptates, iste dolor veniam consectetur, exercitationem quaerat blanditiis labore odit dignissimos cupiditate! Quasi ad modi repellendus id et, voluptate ipsa, voluptas, provident amet deserunt dolorum omnis. Voluptatibus est, explicabo reprehenderit nostrum molestiae, totam itaque commodi, perspiciatis sunt voluptatem vel veritatis nulla modi eveniet quae amet saepe ratione eaque odit! Autem temporibus quae quidem ad? Praesentium eaque hic autem enim officia quisquam debitis magnam, a excepturi! Dolor numquam asperiores officia?</p>
+        </div>
+    </div>
+
+
+    <Script>
+
+              function change(color){
+                    document.body.style.backgroundColor=color;
+
+                    var text =document.getElementsByClassName("text")
+                  if(color == "black"){
+
+                    for(let elm of text){
+                         
+                         elm.style.color="white";
+                        }
+
+                  }else{for(let elm of text){
+                         
+                         elm.style.color="black";
+                        }
+                          
+                  }
+              }
+      
+
+    </Script>
+    </body>
+</html>
