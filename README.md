@@ -1,6 +1,6 @@
 # Color Changer
 
-A simple web application that allows you to change the background color with the click of a button.
+A simple web page that allows you to change the background color with the click of a button.
 
 
 ## Features
